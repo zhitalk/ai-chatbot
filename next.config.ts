@@ -2,7 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   experimental: {
-    ppr: true,
+    // Disabled PPR due to conflict with dynamic routes using cookies() and auth()
+    // ppr: true,
   },
   images: {
     remotePatterns: [
